@@ -24,3 +24,107 @@
 .next-booking h2{font-size:28px;margin:4px 0}.next-booking p{margin:4px 0 10px;color:#9aa9bb}.small-btn{margin-top:10px;padding:8px 12px}
 
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:15px}.stat-card{background:#101924;border:1px solid #223247;border-radius:15px;padding:18px;display:flex;flex-direction:column;gap:5px}.stat-card span,.stat-card small{color:#8192a7;font-size:12px}.stat-card b{font-size:25px}.stat-link{font-size:15px!important;color:#58a4ff}.instructor-dashboard-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:15px}.section-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.section-head h2{margin:4px 0 0}.instructor-note{margin-top:15px;display:flex;justify-content:space-between;gap:20px;color:#a9b7c8}.instructor-note span{color:#74869b}.mini-timeline{margin-top:14px;display:grid;grid-template-columns:repeat(2,1fr);gap:6px;max-height:300px;overflow:auto}.mini-time{display:flex;align-items:center;gap:8px;background:#0b141f;border:1px solid #1d2b3c;border-radius:8px;padding:7px}.mini-time>b{width:45px;font-size:11px;color:#8b9aab}.mini-state{flex:1;padding:5px 7px;border-radius:6px;font-size:11px;text-align:center}.mini-state.free{background:#083d2d;color:#21df8c}.mini-state.busy{background:#26364a;color:#d6e1ef}.mini-state.lunch{background:#421b2a;color:#ff9bae}.mini-state.blocked,.mini-state.closed{background:#1b2430;color:#66768a}.instructor-grid{display:grid;grid-template-columns:68px repeat(7,minmax(110px,1fr));overflow:auto;margin-top:15px}.itime,.idate{border-right:1px solid #1c2a3b;border-bottom:1px solid #1c2a3b;min-height:58px;padding:7px;text-align:center}.itime{display:flex;align-items:center;justify-content:center;color:#8392a5;font-size:11px}.itime.head,.idate{background:#0b141f}.idate b,.idate small{display:block;text-transform:capitalize}.idate b{font-size:11px}.idate small{color:#8192a6;margin-top:3px;font-size:10px}.islot{width:calc(100% - 8px);margin:4px;min-height:48px;padding:3px;font-size:10px;border-radius:8px}.islot.free{background:#083d2d;border-color:#0d7752;color:#1ce48c}.islot.busy{background:#243244;color:#dce6f3}.islot.lunch{background:#421b2a;border-color:#713047;color:#ff93a9}.islot.blocked{background:#262e39;color:#6d7c8f}.islot.closed{background:#0d1722;color:#526277;border-color:#172437}.instructor-booking-row,.student-row{display:flex;align-items:center;gap:15px;padding:14px 0;border-bottom:1px solid #202d3e}.booking-time{min-width:125px;display:grid}.booking-time b{font-size:12px;color:#8292a5}.booking-time strong{font-size:20px}.instructor-booking-row h3,.student-row h3{margin:0 0 4px}.instructor-booking-row p,.student-row p{margin:0;color:#8495aa;font-size:13px}.instructor-booking-row .status{margin-left:auto}.student-avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#1b2d44;color:#9bc6ff}.subscription-card{max-width:650px}.subscription-status{display:inline-block;padding:8px 13px;border-radius:999px;margin:12px 0}.sub-active{background:#123a2a;color:#5ef0ad}.sub-off{background:#421b2a;color:#ff9bae}.price-row{display:flex;gap:45px;border-top:1px solid #203044;border-bottom:1px solid #203044;padding:18px 0;margin:10px 0}.price-row span,.price-row b{display:block}.price-row span{color:#7f90a5;font-size:12px}.price-row b{font-size:21px;margin-top:5px}@media(max-width:1000px){.stats-grid{grid-template-columns:repeat(2,1fr)}.instructor-dashboard-grid{grid-template-columns:1fr}}@media(max-width:700px){.stats-grid{grid-template-columns:1fr 1fr}.instructor-note{display:block}.instructor-note span{display:block;margin-top:6px}}
+
+/* ===== DrivePro Mobile UI ===== */
+@media (max-width: 700px){
+  html,body{width:100%;min-width:0;overflow-x:hidden}
+  body{font-size:14px;padding-bottom:76px}
+  .app-shell{display:block;min-height:100vh}
+  .sidebar{position:fixed;left:0;right:0;bottom:0;top:auto;width:100%;height:68px;z-index:90;padding:6px 4px;background:rgba(12,20,31,.97);border-right:0;border-top:1px solid #26364a;backdrop-filter:blur(12px);display:flex;flex-direction:row;align-items:stretch}
+  .sidebar .logo{display:none}
+  .sidebar nav{display:flex;flex:1;min-width:0;margin:0;gap:2px;overflow-x:auto;scrollbar-width:none}
+  .sidebar nav::-webkit-scrollbar{display:none}
+  .sidebar nav button{flex:0 0 68px;width:68px;height:56px;margin:0;padding:5px 3px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border-radius:10px;font-size:19px;color:#8e9bad}
+  .sidebar nav button span{display:block;font-size:9px;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:64px}
+  .sidebar nav button.active{background:#142d48;color:#fff}
+  .logout{flex:0 0 54px;width:54px;height:56px;margin:0;padding:5px 2px;font-size:19px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border:0;background:transparent;color:#9aa8b8}
+  .logout span{display:block;font-size:9px;line-height:1.1}
+  .main{margin:0;width:100%;max-width:none;padding:14px 12px 24px}
+  .topbar{margin-bottom:16px;align-items:center;gap:8px}
+  .topbar>div:first-child{min-width:0}
+  .eyebrow{font-size:9px}
+  .main h1{font-size:23px;line-height:1.15;margin:3px 0}
+  .subtitle{font-size:12px;line-height:1.4;margin:4px 0 0}
+  .user-chip{max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px;padding:7px 9px}
+  .cards,.stats-grid{grid-template-columns:1fr 1fr;gap:9px}
+  .card,.landing-card,.auth-card{padding:14px;border-radius:14px}
+  .cards .card:nth-child(2){grid-column:1/-1}
+  .cards .card h2{font-size:20px}
+  .stats-grid .stat-card{padding:13px;min-height:92px}
+  .stat-card b{font-size:21px;word-break:break-word}
+  .stat-card small,.stat-card span{font-size:10px;line-height:1.3}
+  .stat-link{font-size:12px!important}
+  .instructor-dashboard-grid{grid-template-columns:1fr;gap:9px}
+  .section-head{align-items:flex-start}
+  .section-head h2{font-size:18px}
+  .section-head button{font-size:11px;padding:8px 9px;white-space:nowrap}
+  .instructor-note{font-size:12px;line-height:1.45}
+  .mini-timeline{grid-template-columns:1fr;max-height:260px}
+  .mini-time{padding:8px}
+
+  /* Mobile calendar */
+  .schedule-layout{grid-template-columns:1fr;gap:10px}
+  .calendar-side{order:1;padding:12px}
+  .week-panel{order:2;border-radius:14px}
+  .month-head h2{font-size:16px}
+  .day{padding:8px 1px;font-size:12px}
+  .legend{grid-template-columns:1fr 1fr;gap:7px;font-size:10px}
+  .info-box{font-size:11px;padding:11px}
+  .week-head{padding:12px;gap:8px}
+  .week-head h2{font-size:15px}
+  .week-actions{gap:4px}
+  .week-actions button{padding:7px 8px;font-size:11px}
+  .grid-wrap{grid-template-columns:52px repeat(7,minmax(76px,1fr));overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .time-head,.date-head{padding:7px 3px;font-size:10px}
+  .date-head b{font-size:10px}
+  .date-head small{font-size:9px}
+  .time-cell{min-height:43px;font-size:10px}
+  .slot{min-height:35px;margin:3px;width:calc(100% - 6px);font-size:9px}
+
+  /* Instructor schedule */
+  .instructor-grid{grid-template-columns:50px repeat(7,minmax(82px,1fr));overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:10px}
+  .itime,.idate{min-height:52px;padding:5px 2px}
+  .itime{font-size:9px}
+  .idate b{font-size:9px}.idate small{font-size:8px}
+  .islot{min-height:42px;margin:3px;width:calc(100% - 6px);font-size:8px;padding:2px}
+
+  /* Lists/cards */
+  .instructor-booking-row,.student-row{gap:9px;padding:12px 0;align-items:flex-start}
+  .booking-time{min-width:92px}
+  .booking-time strong{font-size:15px;line-height:1.2}
+  .booking-time b{font-size:10px}
+  .instructor-booking-row h3,.student-row h3{font-size:14px}
+  .instructor-booking-row p,.student-row p{font-size:11px;line-height:1.35}
+  .instructor-booking-row .status{margin-left:auto;font-size:9px;padding:5px 7px;white-space:nowrap}
+  .student-avatar{width:38px;height:38px;flex:0 0 38px}
+  .reviews-head{align-items:flex-start;gap:8px}
+  .reviews-head h2{font-size:18px}
+  .rating-big{padding:7px 9px}.rating-big b{font-size:19px}.rating-big span{font-size:17px}.rating-big small{font-size:9px}
+  .review-top{align-items:flex-start}.review-item{padding:12px 0}.review-item p{font-size:12px}
+  .price-row{gap:20px;justify-content:space-between}.price-row b{font-size:18px}
+
+  /* Forms and dialogs */
+  .landing{padding:14px}
+  .landing-card h1{font-size:40px}
+  .actions{margin:18px 0;gap:8px}
+  .actions button{min-width:0;width:100%}
+  .auth-card{width:100%}
+  .auth-card input,.booking-modal select{padding:13px;font-size:16px}
+  .modal-backdrop{padding:10px;align-items:end}
+  .booking-modal{width:100%;max-height:90vh;overflow:auto;border-radius:18px 18px 10px 10px;padding:18px}
+  .booking-modal h2{font-size:20px;margin:5px 0 14px;padding-right:25px}
+  .booking-modal label{font-size:12px}
+  .modal-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+  .modal-actions button{width:100%;padding:12px}
+  .toast{left:12px;right:12px;bottom:78px;text-align:center;font-size:12px}
+  .empty{padding:30px 10px;font-size:12px}
+}
+
+@media (max-width:380px){
+  .sidebar nav button{flex-basis:62px;width:62px}
+  .logout{flex-basis:48px;width:48px}
+  .main{padding-left:10px;padding-right:10px}
+  .stats-grid{gap:7px}
+  .stat-card{padding:10px!important}
+  .main h1{font-size:21px}
+}
